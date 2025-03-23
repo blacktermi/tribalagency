@@ -51,6 +51,28 @@
   <!--====== NAVBAR NINE PART START ======-->
 
   <section class="navbar-area navbar-nine">
+    <style>
+      /* Dropdown personnalisé */
+      .dropdown-menu {
+        background-color: #121212;
+        border: 1px solid #333;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      }
+  
+      .dropdown-menu .dropdown-item {
+        color: #fff !important;
+        padding: 8px 16px;
+        transition: background 0.3s ease;
+      }
+  
+      .dropdown-menu .dropdown-item:hover {
+        background-color: #1e1e1e;
+        color: #00ffaa;
+      }
+    </style>
+  
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -64,16 +86,28 @@
               <span class="toggler-icon"></span>
               <span class="toggler-icon"></span>
             </button>
-
+  
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                   <a class="page-scroll active" href="#hero-area">Accueil</a>
                 </li>
-                <li class="nav-item">
-                  <a class="page-scroll" href="#services">Nos services</a>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Nos Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="creationsitweb.html">Création de site web</a></li>
+                    <li><a class="dropdown-item" href="branding.html">Branding & Identité visuelle</a></li>
+                    <li><a class="dropdown-item" href="packshots.html">Photographie produit</a></li>
+                    <li><a class="dropdown-item" href="ugc.html">Contenu vidéo & publicité</a></li>
+                    <li><a class="dropdown-item" href="photovideo.html">Offres groupées photo + vidéo</a></li>
+                    <li><a class="dropdown-item" href="offreentreprise.html">Offres entreprises</a></li>
+                  </ul>
                 </li>
-
+  
                 <li class="nav-item">
                   <a class="page-scroll" href="#apropos">À propos</a>
                 </li>
@@ -82,17 +116,14 @@
                 </li>
               </ul>
             </div>
-
+  
             <div class="navbar-btn d-none d-lg-inline-block">
               <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
             </div>
           </nav>
-          <!-- navbar -->
         </div>
       </div>
-      <!-- row -->
     </div>
-    <!-- container -->
   </section>
 
   <!--====== NAVBAR NINE PART ENDS ======-->
@@ -108,20 +139,26 @@
         <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" /></a>
       </div>
       <p class="text">✨ Transformez Votre Vision Digitale en Réalité 🚀</p>
-      <!-- logo -->
+  
       <div class="sidebar-menu">
-        <h5 class="menu-title">Nos liens</h5>
+        <h5 class="menu-title">Navigation</h5>
         <ul>
           <li><a href="#hero-area">Accueil</a></li>
-          <li><a href="#services">Nos service</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="creationsitweb.html">🌐 Création de site web</a></li>
+          <li><a href="branding.html">🎨 Identité visuelle</a></li>
+          <li><a href="packshots.html">📸 Photographie produit</a></li>
+          <li><a href="ugc.html">🎥 Contenu vidéo & UGC</a></li>
+          <li><a href="photovideo.html">📦 Packs Photo + Vidéo</a></li>
+          <li><a href="offreentreprise.html">💼 Offres Entreprises</a></li>
           <li><a href="#apropos">À propos</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a target="_blank" href="https://tribalgroup.ci/">Tribal Group</a></li>
-          <li><a target="_blank" href="https://tribalprint.ci/">Tribal Print</a></li>
+          <li><a target="_blank" href="https://tribalgroup.ci/">🌍 Tribal Group</a></li>
+          <li><a target="_blank" href="https://tribalprint.ci/">🖼️ Tribal Print</a></li>
         </ul>
       </div>
-      <!-- menu -->
-      <div class="sidebar-social align-items-center justify-content-center">
+  
+      <div class="sidebar-social">
         <h5 class="social-title">Suivez-nous</h5>
         <ul>
           <li>
@@ -130,17 +167,9 @@
           <li>
             <a href="https://www.instagram.com/_tribalagency/?hl=fr"><i class="lni lni-instagram-original"></i></a>
           </li>
-          <!--<li>
-            <a href="javascript:void(0)"><i class="lni lni-call-original"></i></a>
-          </li>
-          <li>
-            <a href="javascript:void(0)"><i class="lni lni-youtube"></i></a>
-          </li>-->
         </ul>
       </div>
-      <!-- sidebar social -->
     </div>
-    <!-- content -->
   </div>
   <div class="overlay-left"></div>
 
@@ -150,27 +179,22 @@
   <section id="hero-area" class="header-area header-eight">
     <div class="container">
       <div class="row align-items-center">
+        <!-- Texte à gauche -->
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-content">
-            <h1>Donnez vie à votre vision digitale</h1>
+            <h1>Contenu UGC & Visuels Produit Qui Font Vendre</h1>
             <p>
-                Là où créativité et innovation se rencontrent pour transformer vos idées en réalité numérique. Nous sommes une équipe passionnée par la technologie et le design, dédiée à fournir des solutions digitales sur mesure pour répondre à vos besoins spécifiques.
+              Tribal Agency est spécialisée dans la <strong>création de contenu UGC</strong> authentique et la <strong>photographie produit professionnelle</strong> pour booster l'image de votre marque. Grâce à nos <strong>sites web performants</strong>, un <strong>branding percutant</strong> et des <strong>vidéos publicitaires stratégiques</strong>, nous transformons vos idées en leviers de croissance. 
             </p>
             <div class="button">
-              <a href="reservation.html" class="btn primary-btn">Nous contacter</a>
-                <!-- <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
-                class="glightbox video-button">
-                <span class="btn icon-btn rounded-full">
-                  <i class="lni lni-play"></i>
-                </span>
-                <span class="text">Watch Intro</span>
-                </a> -->
+              <a href="reservation.html" class="btn primary-btn">📸 Créez vos visuels maintenant</a>
             </div>
           </div>
         </div>
+        <!-- Image à droite -->
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-image">
-            <img src="assets/images/header/hero-image.png" alt="#" />
+            <img src="assets/images/header/hero-image.png" alt="Contenu UGC et photo produit par Tribal Agency à Abidjan" />
           </div>
         </div>
       </div>
@@ -273,14 +297,14 @@
         </div>
         <div class="col-lg-6 col-12" id="apropos">
           <div class="about-five-content">
-            <h6 class="small-title text-lg">NOTRE HISTOIRE</h6>
-            <h2 class="main-title fw-bold">Notre équipe apporte l'expérience et les connaissances</h2>
+            <h6 class="small-title text-lg">À PROPOS DE NOUS</h6>
+            <h2 class="main-title fw-bold">Des visuels puissants pour une stratégie digitale qui convertit</h2>
             <div class="about-five-tab">
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
+                  <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
                     type="button" role="tab" aria-controls="nav-who" aria-selected="true">Qui Nous Sommes</button>
-                    <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
+                  <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
                     type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Notre Vision</button>
                   <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
                     type="button" role="tab" aria-controls="nav-history" aria-selected="false">Notre Histoire</button>
@@ -288,25 +312,24 @@
               </nav>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
-                  <p>Nous sommes Tribal Agency, une équipe dynamique spécialisée dans la création de contenu authentique et impactant. Experts en User-Generated Content (UGC), 
-                    en design de marque et en campagnes publicitaires innovantes, nous aidons les entreprises à se connecter profondément avec leur audience et à renforcer 
-                    leur présence en ligne.</p>
+                  <p>Nous sommes <strong>Tribal Agency</strong>, une agence créative spécialisée dans la <strong>photographie produit</strong>, la création de <strong>contenu UGC</strong> et <strong>les campagnes publicitaires digitales.</strong> 
+                    Basée à Abidjan, notre équipe réunit des experts en design, vidéo et stratégie digitale pour transformer les idées en visuels percutants et en résultats mesurables.
+                    Que vous soyez une marque locale ou un e-commerce ambitieux, nous vous aidons à vous démarquer dans un monde de plus en plus visuel.</p>
                 </div>
                 <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                  <p>Imaginer un monde où les marques racontent leur histoire à travers des expériences authentiques et engageantes. Notre vision est de transformer chaque 
-                    interaction en une opportunité de connecter, inspirer et fidéliser, en combinant la puissance de l'UGC, des visuels uniques et des stratégies publicitaires percutantes.</p>
+                  <p>Notre vision est de devenir la référence africaine en matière de contenus visuels de haute qualité, centrés sur l’humain. 
+                    Nous croyons que les marques fortes se construisent avec des images sincères, des vidéos engageantes et une stratégie pensée pour l’impact.
+                    Tribal Agency combine <strong>créativité</strong>, <strong>agilité</strong> et <strong>performance</strong> pour créer des connexions authentiques entre les marques et leur public.</p>
                 </div>
                 <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
-                  <p>Née de la volonté de réinventer la communication digitale, Tribal Agency a rapidement évolué pour devenir un acteur clé dans la création de campagnes centrées sur l'humain. 
-                    En intégrant le pouvoir du contenu généré par les utilisateurs, du design de marque audacieux et des stratégies publicitaires performantes, nous avons collaboré avec des entreprises 
-                    visionnaires pour raconter des histoires qui résonnent et qui transforment.</p>
+                  <p>Fondée par des passionnés de design, de technologie et d'entrepreneuriat, Tribal Agency est née du besoin de produire localement des contenus dignes des plus grandes marques. 
+                    Grâce à l’expérience acquise avec <a style="color: black;" href="https://tribalprint.ci/"><strong>Tribal Print</strong></a>, notre pôle de décoration, nous avons compris le pouvoir des images bien pensées.
+                    Aujourd’hui, nous allions cette expérience à la vidéo, au marketing digital et au branding pour créer une offre complète adaptée aux réalités des marques africaines.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
     <!-- container -->
   </section>
 
@@ -314,7 +337,7 @@
 
   <!-- ===== service-area start ===== -->
   <section id="services" class="services-area services-eight">
-    <!--======  Start Section Title Five ======-->
+    <!-- Section Title -->
     <div class="section-title-five">
       <div class="container">
         <div class="row">
@@ -323,125 +346,126 @@
               <h6>Services</h6>
               <h2 class="fw-bold">Nos services</h2>
               <p>
-                Nos offres sont conçues pour s'adapter à chaque étape de la croissance de votre entreprise 🚀, avec une gestion réactive ⚡ et des bonus exclusifs 🎁 pour garantir votre satisfaction 😊. 
-                Grâce à une communication stratégique comprenant des publications attractives sur les réseaux sociaux 📱, 
-                des campagnes d'e-mails ciblées 📧 et des landing pages dédiées 🌐, nous assurons une visibilité optimale et une connexion efficace avec vos clients et prospects 🤝.
+                Nos solutions sont pensées pour propulser votre marque dans le monde digital. De la <strong>photographie produit</strong> percutante à la <strong>création de contenu UGC</strong> captivant, en passant par le <strong>branding</strong> et la <strong>publicité performante</strong>, Tribal Agency transforme votre vision en résultats. 🚀 Boostez votre visibilité, connectez avec votre audience, et convertissez vos prospects grâce à une stratégie 360° sur-mesure.
               </p>
             </div>
           </div>
         </div>
-        <!-- row -->
       </div>
-      <!-- container -->
     </div>
-    <!--======  End Section Title Five ======-->
+  
+    <!-- Services Grid -->
     <div class="container">
       <div class="row">
+  
+        <!-- CRÉATION DE SITE WEB -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-capsule"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-world"></i></div>
             <div class="service-content">
-              <h4>Offre STARTER - Pour les Startups et Entrepreneurs 🚀</h4>
+              <h4>🔥 CRÉATION DE SITE WEB</h4>
               <p>
-                Idéal pour les jeunes entreprises qui souhaitent établir une présence professionnelle et impactante.<br>
-
-                <br>•	Création d'une identité visuelle complète (logo, mini-charte graphique).
-                <br>•	5 visuels réseaux sociaux et 1 bannière promotionnelle.
-                <br>•	Site vitrine 1 page avec présentation et formulaire de contact.
-                <br>•	Bonus : Conseil stratégique de 1h.
+                ✔ Site Vitrine – <br>➡️ Idéal pour les entrepreneurs & PME<br>➡️ Design responsive & pro<br>➡️ Intégration WhatsApp & formulaire
+  
+                <br><br>✔ Site E-commerce – <br>➡️ Boutique clé en main<br>➡️ Gestion commandes & SEO intégré<br>➡️ Support post-lancement
+  
+                <br><br>✔ Landing Page – <br>➡️ Copywriting stratégique<br>➡️ Design optimisé conversion<br>➡️ Idéale pour capturer des leads
               </p>
+              <br><p><em>Des sites modernes, rapides et adaptés à vos besoins pour affirmer votre présence en ligne et convertir efficacement vos visiteurs.</em></p>
             </div>
           </div>
         </div>
+  
+        <!-- BRANDING -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-bootstrap"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-brush"></i></div>
             <div class="service-content">
-              <h4>Offre BOOST - Pour les PME 📈</h4>
+              <h4>🎨 BRANDING & IDENTITÉ VISUELLE</h4>
               <p>
-                Pensée pour booster la visibilité et attirer de nouveaux clients grâce à une stratégie personnalisée.<br>
-
-                <br>•	Audit marketing complet et plan d'action sur 3 mois.
-                <br>•	Création graphique avancée : logo décliné, charte graphique, 10 visuels réseaux sociaux.
-                <br>•	Community management pendant 1 mois et animation des stories.
-                <br>•	Site web vitrine (3 à 5 pages) optimisé pour mobile.
-                <br>•	1 campagne publicitaire (Facebook ou Instagram Ads).
+                ✔ Logo Pro + Charte – <br>➡️ Design unique et mémorable<br>➡️ Déclinaisons prêtes à l’usage<br>➡️ Guide de couleurs et typographies
+  
+                <br><br>✔ Branding Complet – <br>➡️ Logo + charte + carte de visite<br>➡️ Kit réseaux sociaux cohérent<br>➡️ Image de marque forte
               </p>
+              <br><p><em>Créez une identité de marque forte, cohérente et mémorable avec des visuels impactants qui vous démarquent de la concurrence.</em></p>
             </div>
           </div>
         </div>
+  
+        <!-- PHOTOGRAPHIE PRODUIT -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-shortcode"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-camera"></i></div>
             <div class="service-content">
-              <h4>Offre ELITE - Pour les Grandes Entreprises 🏆</h4>
+              <h4>📸 PHOTOGRAPHIE PRODUIT & PACKSHOTS</h4>
               <p>
-                Une solution premium pour les entreprises visant à dominer leur secteur.<br>
-
-                <br>•	Accompagnement stratégique sur 6 mois avec audit complet.
-                <br>•	Branding premium : identité visuelle complète et supports (papeterie, PowerPoint).
-                <br>•	Production de contenu : vidéo promotionnelle et 20 visuels premium.
-                <br>•	Développement d'un site e-commerce et formation à sa gestion.
-                <br>•	3 campagnes publicitaires (Facebook, Instagram et Google Ads).
+                ✔ Pack Mini – <br>➡️ 10 photos HD, fond blanc ou coloré<br>➡️ Détourage & retouche inclus
+  
+                <br><br>✔ Pack Standard – <br>➡️ 20 photos sous plusieurs angles<br>➡️ Mise en scène légère & pro
+  
+                <br><br>✔ Pack Premium – <br>➡️ 30 photos studio avec ambiance<br>➡️ Retouche avancée & qualité premium
+  
+                <br><br>🎥 Option Vidéo Produit – <br>➡️ Vidéo courte immersive (10-20s)<br>➡️ Motion + musique
               </p>
+              <br><p><em>Des visuels produits professionnels qui boostent vos ventes en ligne, améliorent votre image de marque et captivent vos clients.</em></p>
             </div>
           </div>
         </div>
+  
+        <!-- CONTENU UGC & PUB -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-dashboard"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-video"></i></div>
             <div class="service-content">
-              <h4>Offre SUR-MESURE - Pour des besoins spécifiques 🎯</h4>
+              <h4>🎥 CONTENU UGC & PUBLICITÉ</h4>
               <p>
-                Idéal pour les projets uniques nécessitant une approche flexible et personnalisée.<br>
-
-                <br>•	Entretien gratuit pour analyser vos besoins.
-                <br>•	Proposition sur mesure incluant branding, création de contenu, publicités, ou gestion des réseaux sociaux.
+                ✔ Pack UGC Réseaux – <br>➡️ 3 vidéos TikTok/Instagram<br>➡️ Montage dynamique avec sous-titres
+  
+                <br><br>✔ Vidéo Pub Premium – <br>➡️ Tournage pro & storytelling<br>➡️ Script & montage optimisés
+  
+                <br><br>✔ Pack Ads Performant – <br>➡️ Gestion complète des campagnes Meta / TikTok<br>➡️ Objectif : conversions et notoriété
               </p>
+              <br><p><em>Créez du contenu authentique, engageant et pensé pour les réseaux sociaux grâce à notre expertise UGC et nos publicités performantes.</em></p>
             </div>
           </div>
         </div>
+  
+        <!-- OFFRES GROUPÉES PHOTO & VIDÉO -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-layers"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-gallery"></i></div>
             <div class="service-content">
-              <h4>Offre FIDÉLITÉ - Pour les clients existants 🤝</h4>
+              <h4>📸🎬 PACKS PHOTO + VIDÉO</h4>
               <p>
-                Une offre exclusive pour remercier nos clients fidèles et les inciter à collaborer davantage.<br>
-
-              <br>•	Réduction de 10 % après 3 collaborations.
-              <br>•	Consultation stratégique gratuite pour tout projet supérieur à 1 000 000 FCFA.
-              <br>•	Offre de parrainage : 15 % de réduction pour le parrain et le filleul.
+                ✔ Starter – <br>➡️ 10 photos produit + 1 vidéo courte<br>➡️ Optimisation e-commerce
+  
+                <br><br>✔ Business – <br>➡️ 20 photos + 2 vidéos<br>➡️ Retouches et animation
+  
+                <br><br>✔ Pro – <br>➡️ 30 photos + 3 vidéos pub<br>➡️ Idéal pour campagnes à fort impact
+  
+                <br><br>💡 Options : <br>➡️ Mise en scène / mannequin<br>➡️ UGC influenceur<br>➡️ Animation 3D ou motion design
               </p>
+              <br><p><em>Combinez la puissance de l’image et de la vidéo pour raconter votre histoire et faire briller vos produits sur toutes les plateformes.</em></p>
             </div>
           </div>
         </div>
+  
+        <!-- OFFRES ENTREPRISES -->
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-reload"></i>
-            </div>
+            <div class="service-icon"><i class="lni lni-briefcase"></i></div>
             <div class="service-content">
-              <h4>Offre EXPRESS - Pour les projets urgents ⚡</h4>
+              <h4>💼 OFFRES SPÉCIALES ENTREPRISES</h4>
               <p>
-                Une solution rapide et efficace pour répondre aux besoins immédiats.<br>
-
-                <br>•	Réalisation en 48h : pack de 5 visuels, montage vidéo express (30 secondes), campagne publicitaire.
-                <br>•	Majoration : +20 % pour service express.
+                ✔ Pack Full Digital – <br>➡️ Site Web + Branding + Publicité + 3 vidéos UGC<br>➡️ Offre 360° clé en main
+  
+                <br><br>✔ Pack Influence – <br>➡️ 5 vidéos UGC + gestion TikTok Ads<br>➡️ Boost instantané pour marques modernes
               </p>
+              <br><p><em>Des packs complets pensés pour les entreprises ambitieuses qui veulent accélérer leur croissance avec une stratégie digitale sur-mesure.</em></p>
             </div>
           </div>
         </div>
+  
       </div>
     </div>
   </section>
@@ -460,13 +484,17 @@
       <div class="row justify-content-center">
         <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
           <div class="inner-content">
-            <h2>Nous aimons créer des solutions parfaites <br />pour votre entreprise</h2>
+            <h2>Des solutions créatives et efficaces <br />pour propulser votre business</h2>
             <p>
-              Chez Tribal Agency, nous adorons concevoir des solutions sur mesure qui répondent parfaitement aux besoins de votre entreprise. 
-              🎯 Que ce soit pour booster votre visibilité, renforcer votre image de marque ou maximiser votre impact en ligne, nous transformons vos idées en réussites concrètes. 🚀
+              Chez <strong>Tribal Agency</strong>, nous transformons vos idées en projets concrets à fort impact. 
+              💡 Que vous lanciez un nouveau produit ou souhaitiez renforcer votre présence digitale, notre équipe vous accompagne avec des <strong>solutions sur mesure</strong> : contenu UGC, branding, site web, photographie produit et publicité digitale. 🚀
+              <br><br>
+              📞 Prêt à booster votre marque ? Réservez votre appel dès maintenant et discutons de votre projet !
             </p>
             <div class="light-rounded-buttons">
-              <a data-tally-open="wQvpDk" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" class="btn primary-btn-outline">Réservation</a>
+              <a data-tally-open="wQvpDk" data-tally-emoji-text="🔥" data-tally-emoji-animation="tada" class="btn primary-btn-outline">
+                Réservez une consultation
+              </a>
             </div>
           </div>
         </div>
@@ -571,101 +599,71 @@
                   </div>
                   <div class="contact-content">
                     <h4>Horaires</h4>
-                    <p>24 Heures / 7 Jours ouvert</p>
-                    <p>Horaires de bureau: 9h - 18h</p>
+                    <p>24h/24 - 7J/7</p>
+                    <p>Heures de bureau : 9h - 18h</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-whatsapp"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>WhatsApp</h4>
+                    <p>Discutons directement</p>
+                    <a href="http://wa.me/2250150542889" target="_blank" class="btn primary-btn mt-2">
+                      📲 Envoyer un message
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-8">
-          <div style="background-color: black;" class="contact-form-wrapper">
-            <iframe data-tally-src="https://tally.so/embed/wz24eZ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="709" frameborder="0" marginheight="0" marginwidth="0" title="null"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-            </form>
+  
+        <!-- Si tu veux ajouter un encart texte à droite, tu peux ici -->
+        <div class="col-xl-8 d-flex align-items-center">
+          <div class="contact-text ps-5">
+            <h2 class="mb-3">Parlons de votre projet ✨</h2>
+            <p>
+              Vous avez une idée, une marque à lancer ou un contenu à produire ? Tribal Agency vous accompagne à chaque étape pour créer des visuels percutants et des stratégies efficaces. 📈
+              <br><br>
+              Contactez-nous pour une première discussion gratuite. On est là pour transformer vos idées en résultats concrets 🚀.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ========================= contact-section end ========================= -->
 
-  <!-- ========================= map-section end ========================= -->
-  <!--
-  <section class="map-section map-style-9">
-    <div class="map-container">
-      <object style="border:0; height: 500px; width: 100%;"
-        data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
-    </div>
-    </div>
-  </section>
-  -->
-  <!-- ========================= map-section end ========================= -->
-
-  <!-- Start Footer Area -->
   <footer class="footer-area footer-eleven">
-    <!-- Start Footer Top -->
-    <div class="footer-top">
-      <div class="container">
-        <div class="inner-content">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- Single Widget -->
-              <div class="footer-widget f-about">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="#" class="img-fluid" />
-                  </a>
-                </div>
-                <p>
-                  Nous croyons en l’innovation d’aujourd’hui pour créer des marques impactantes, 
-                  durables et mémorables qui façonneront le monde de demain..
-                </p>
-                <p class="copyright-text">
-                  <span>© 2025 Tribal Group.</span>Conçu et développé par 
-                  <a href="https://tribalgroup.ci" rel="nofollow"> Tribal Agency </a>
-                </p>
+  <div class="footer-top">
+    <div class="container">
+      <div class="inner-content text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 col-12">
+            <div class="footer-widget f-about">
+              <div class="logo mb-3">
+                <a href="index.html">
+                  <img src="assets/images/logo.svg" alt="Logo Tribal Agency" class="img-fluid" style="max-width: 160px;" />
+                </a>
               </div>
-              <!-- End Single Widget -->
-            </div>
-            <div class="col-lg-2 col-md-6 col-12">
-              <!-- Single Widget -->
-               <!-- <div class="footer-widget f-link">
-                <h5>Solutions</h5>
-                <ul>
-                  <li><a href="javascript:void(0)">Marketing</a></li>
-                  <li><a href="javascript:void(0)">Analytics</a></li>
-                  <li><a href="javascript:void(0)">Commerce</a></li>
-                  <li><a href="javascript:void(0)">Insights</a></li>
-                </ul>
-              </div>-->
-              <!-- End Single Widget -->
-            </div>
-            <div class="col-lg-2 col-md-6 col-12">
-              <!-- Single Widget -->
-             <!--  <div class="footer-widget f-link">
-                <h5>Support</h5>
-                <ul>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Documentation</a></li>
-                  <li><a href="javascript:void(0)">Guides</a></li>
-                  <li><a href="javascript:void(0)">API Status</a></li>
-                </ul>
-              </div>-->
-              <!-- End Single Widget -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- Single Widget -->
-              
-              <!-- End Single Widget -->
+              <p class="mb-3">
+                Nous croyons en l’innovation d’aujourd’hui pour créer des marques impactantes, 
+                durables et mémorables qui façonneront le monde de demain.
+              </p>
+              <p class="copyright-text">
+                <span>© 2025 Tribal Group.</span> Conçu et développé par 
+                <a href="https://tribalgroup.ci" rel="nofollow">Tribal Agency</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ End Footer Top -->
-  </footer>
+  </div>
+</footer>
   <!--/ End Footer Area -->
 
 
@@ -674,7 +672,7 @@
   </a>
 
   <!--====== js ======-->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
